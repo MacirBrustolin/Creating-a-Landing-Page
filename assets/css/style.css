@@ -1,16 +1,27 @@
+.intro-header h2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 5rem;
+}
+
 .intro-content {
     position: relative;
     top: -1rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--gap);
+    gap: 100px;
     height: 100vg;
 }
 
 .intro-text-content, .intro-img {
     display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
+    flex-flow: column nowrap;
+    align-items: flex-start;
     justify-content: center;
 }
 
@@ -22,6 +33,13 @@
 }
 
 .intro-img {
-    max-width: 50%;
+    max-width: auto;
     height: auto;
 }
+
+.intro-img img {
+    width: 100%;
+
+}
+
+
