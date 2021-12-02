@@ -31,7 +31,9 @@
 }
 
 .menu ul li a {
-    display: block;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
     font-size: 1.8rem;
     color: var(--primary-color);

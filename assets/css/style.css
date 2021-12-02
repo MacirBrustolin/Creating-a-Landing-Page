@@ -1,4 +1,4 @@
-.intro-header h2 {
+.intro-header h2, .main-content h2 {
     position: relative;
     display: flex;
     justify-content: center;
@@ -15,7 +15,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
-    height: 100vg;
+    min-height: 100vg;
 }
 
 .intro-text-content, .intro-img {
@@ -42,4 +42,48 @@
 
 }
 
+.geradores-fotovoltaicos {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 100vh;
+}
 
+.grid-one-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+.grid-main-heading {
+    margin-bottom: 1rem;
+}
+.grid-description {
+    padding-bottom: 7.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10rem;
+    counter-reset: grid-counter;
+}
+
+.grid h3 {
+    font-size: 2rem;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.grid h3::before {
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 5rem;
+    font-style: italic;
+    top: -2rem;
+    left: -3rem;
+    transform: rotate(5deg);
+}
