@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -48,12 +49,47 @@ h6 {
 a {
     text-decoration: none;
 }
+
 .aneel {
     color: var(--primary-color);
-    text-decoration:underline;
+    text-decoration: underline;
 }
+
 p {
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-indent: 5rem;
+}
+.responsive-table {
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+table {
+    min-width: 360px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+tfoot td, table th {
+    color: #CCFFBB;
+    background: #005502;
+}
+
+tbody td {
+    background: #CCFFBB;
 }

@@ -2,7 +2,7 @@
     background-image: url('../img/main-bg.svg');
     background-size:auto;
     background-position: center center;
-    color: var(--secundary-color);
+    color: var(--secondary-color);
 }
 
 .white-bg {
@@ -21,4 +21,8 @@
 }
 .menu-spacing{
     height: 65px;
+}
+body .full-width {
+    width: 100%;
+    flex: 1 1 100%;
 }
