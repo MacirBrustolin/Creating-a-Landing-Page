@@ -1,3 +1,4 @@
+
 .intro-header h2, .main-content h2 {
     position: relative;
     display: flex;
@@ -7,6 +8,10 @@
     text-transform: uppercase;
     text-align: center;
     padding-top: 5rem;
+}
+
+.intro-header h2 {
+    padding-top: 100px;
 }
 
 .intro-content {
@@ -47,7 +52,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .grid-one-content {
@@ -174,15 +179,104 @@
 .form-group ::placeholder {
     color: #84CF96;
 }
+
 .footer {
     font-size: 1.6rem;
     color: var(--white-color);
     text-align: center;
 }
+
 .registered {
     color: #009A31;
 }
+
 .footer p {
     margin: 0;
     padding: 3rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0.1rem solid #84CF96;
+    color: #84CF96;
+    transform: rotate(-90deg);
+    box-shadow: 0 0 5px #84CF96;
+}
+
+@media (max-width: 800px) {
+    .intro-content, .grid, .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+    }
+
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .close-menu-label::after {
+        content: '≡';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        left: 2rem;
+        background: #009A31;
+        border-radius: 10%;
+        box-shadow: 0 0 5px #84CF96;
+        color: var(--white-color);
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: '×';
+    }
+
+    .menu-spacing{
+        display: none;
+    }
 }
