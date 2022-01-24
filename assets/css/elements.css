@@ -85,6 +85,15 @@ table td, table th {
     
 }
 
+th:first-child {
+    border-top-left-radius: 5px;
+    text-align: left;
+}
+
+th:last-child {
+    border-top-right-radius: 5px;
+}
+
 tfoot td, table th {
     color: #CCFFBB;
     background: #005502;
@@ -97,6 +106,12 @@ tbody tr {
 
 tbody tr:nth-child(even){
     background: #CEFFCE;
-    
-    
+}
+
+tfoot tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+tfoot tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
 }
