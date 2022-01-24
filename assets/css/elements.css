@@ -91,9 +91,12 @@ tfoot td, table th {
 }
 
 tbody tr {
-    background: white;
+    background: #84CF96;
+    
 }
 
 tbody tr:nth-child(even){
-    background: #b4b4b6;
+    background: #CEFFCE;
+    
+    
 }
